@@ -1,0 +1,319 @@
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ cd /
+ubuntu@ubuntu:/$ cd t*
+ubuntu@ubuntu:/tmp$ cd tu*
+ubuntu@ubuntu:/tmp/tutorial$ mkdir "6_a_bit_of_plumbing"
+ubuntu@ubuntu:/tmp/tutorial$ cd 6*
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ cd dir_1
+bash: cd: dir_1: No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ ls
+command_line.txt  folder_1  folder_2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ cd folder_1
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_1$ ls
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_1$ cd folder_2
+bash: cd: folder_2: No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_1$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ cd folder_2
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2$ ls
+folder_3  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2$ cd folder_3
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ ls
+concat.txt
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ wc -l concat.txt
+62 concat.txt
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ ls ~ > file_list.txt
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat fil*
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+snap
+Templates
+Videos
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ wc -l file_list.txt
+9 file_list.txt
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ ls ~ wc -l
+ls: no se puede acceder a 'wc': No existe el archivo o el directorio
+/home/ubuntu:
+total 36
+drwxr-xr-x 2 ubuntu ubuntu 4096 sep 14 10:21 Desktop
+drwxr-xr-x 2 ubuntu ubuntu 4096 sep  5 14:00 Documents
+drwxr-xr-x 2 ubuntu ubuntu 4096 sep  5 14:00 Downloads
+drwxr-xr-x 2 ubuntu ubuntu 4096 sep  5 14:00 Music
+drwxr-xr-x 2 ubuntu ubuntu 4096 sep  5 14:00 Pictures
+drwxr-xr-x 2 ubuntu ubuntu 4096 sep  5 14:00 Public
+drwxr-xr-x 3 ubuntu ubuntu 4096 sep  7 14:59 snap
+drwxr-xr-x 2 ubuntu ubuntu 4096 sep  5 14:00 Templates
+drwxr-xr-x 2 ubuntu ubuntu 4096 sep  5 14:00 Videos
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ ls ~ | wc -l
+9
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ ls /etc|wc -l
+230
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ ls /etc
+acpi                           fprintd.conf     logrotate.d              resolv.conf
+adduser.conf                   fstab            lsb-release              rmt
+alsa                           fuse.conf        ltrace.conf              rpc
+alternatives                   fwupd            lvm                      rsyslog.conf
+anacrontab                     gai.conf         machine-id               rsyslog.d
+apg.conf                       gamemode.ini     magic                    rygel.conf
+apm                            gdb              magic.mime               sane.d
+apparmor                       gdm3             mailcap                  security
+apparmor.d                     geoclue          mailcap.order            selinux
+apport                         ghostscript      manpath.config           sensors3.conf
+appstream.conf                 glvnd            mime.types               sensors.d
+apt                            gnome            mke2fs.conf              services
+avahi                          groff            modprobe.d               sgml
+bash.bashrc                    group            modules                  shadow
+bash_completion                group-           modules-load.d           shadow-
+bash_completion.d              grub.d           mtab                     shells
+bindresvport.blacklist         gshadow          mtools.conf              skel
+binfmt.d                       gshadow-         mysql                    snmp
+bluetooth                      gss              nanorc                   speech-dispatcher
+brlapi.key                     gtk-2.0          netplan                  ssh
+brltty                         gtk-3.0          network                  ssl
+brltty.conf                    hdparm.conf      networkd-dispatcher      subgid
+ca-certificates                host.conf        NetworkManager           subuid
+ca-certificates.conf           hostid           networks                 sudoers
+ca-certificates.conf.dpkg-old  hostname         newt                     sudoers.d
+calendar                       hosts            nsswitch.conf            sysctl.conf
+casper.conf                    hosts.allow      openvpn                  sysctl.d
+chatscripts                    hosts.deny       opt                      systemd
+cifs-utils                     hp               os-release               terminfo
+console-setup                  ifplugd          PackageKit               thermald
+cracklib                       init             pam.conf                 thunderbird
+cron.d                         init.d           pam.d                    timezone
+cron.daily                     initramfs-tools  papersize                tmpfiles.d
+cron.hourly                    inputrc          passwd                   ubuntu-advantage
+cron.monthly                   insserv.conf.d   passwd-                  ucf.conf
+crontab                        iproute2         pcmcia                   udev
+cron.weekly                    issue            perl                     udisks2
+cryptsetup-initramfs           issue.net        pki                      ufw
+crypttab                       kernel           pm                       update-manager
+cups                           kernel-img.conf  pnm2ppa.conf             update-motd.d
+cupshelpers                    kerneloops.conf  polkit-1                 update-notifier
+dbus-1                         ldap             popularity-contest.conf  UPower
+dconf                          ld.so.cache      ppp                      usb_modeswitch.conf
+debconf.conf                   ld.so.conf       profile                  usb_modeswitch.d
+debian_version                 ld.so.conf.d     profile.d                vconsole.conf
+default                        legal            protocols                vim
+deluser.conf                   libao.conf       pulse                    vtrgb
+depmod.d                       libaudit.conf    python3                  vulkan
+dhcp                           libblockdev      python3.8                wgetrc
+dictionaries-common            libnl-3          rc0.d                    wpa_supplicant
+dpkg                           libpaper.d       rc1.d                    X11
+e2scrub.conf                   libreoffice      rc2.d                    xattr.conf
+emacs                          locale.alias     rc3.d                    xdg
+environment                    locale.gen       rc4.d                    xml
+environment.d                  localtime        rc5.d                    zfs
+ethertypes                     logcheck         rc6.d                    zsh_command_not_found
+firefox                        login.defs       rcS.d
+fonts                          logrotate.conf   request-key.d
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ ls /etc|less
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ ls
+concat.txt  file_list.txt
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat concat.txt 
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat concat.txt | uniq
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat concat.txt | uniq | wc -l
+62
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat concat.txt | uniq 
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat concat.txt | uniq | wc -l
+62
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat concat.txt | uniq | wc
+     62     284    1190
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat concat.txt | uniq | less
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ man uniq
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat concat.txt | uniq -u | less
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat concat.txt | uniq -c | less
+^[OA^[OA^[OAubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ cat concat.txt | uniq -c | lman uniq
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ sort concat.txt | less
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ sort concat.txt | uniq |wc -l
+4
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing/folder_2/folder_3$ 
+

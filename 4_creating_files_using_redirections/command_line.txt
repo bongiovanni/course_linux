@@ -1,0 +1,214 @@
+ubuntu@ubuntu:~$ cd ..
+ubuntu@ubuntu:/home$ cd ..
+ubuntu@ubuntu:/$ ls
+bin   cdrom  etc   lib    lib64   media  opt   rofs  run   snap  sys  usr
+boot  dev    home  lib32  libx32  mnt    proc  root  sbin  srv   tmp  var
+ubuntu@ubuntu:/$ cd media
+ubuntu@ubuntu:/media$ ls
+cdrom  ubuntu
+ubuntu@ubuntu:/media$ cd..
+cd..: orden no encontrada
+ubuntu@ubuntu:/media$ cd ..
+ubuntu@ubuntu:/$ cd tmp
+ubuntu@ubuntu:/tmp$ ls
+config-err-kpDptw
+ssh-kZqGcXF6ofMe
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-colord.service-3iaSni
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-ModemManager.service-pOXqoi
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-switcheroo-control.service-S4Hdig
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-systemd-logind.service-H0nHCi
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-systemd-resolved.service-rbAUUg
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-systemd-timesyncd.service-K7GDxg
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-upower.service-vHuHrf
+Temp-049e830e-8573-43d0-a025-8af7b58b1d3b
+Temp-afee7109-3e96-488a-b926-dd606a33490e
+tracker-extract-files.999
+tutorial
+ubuntu@ubuntu:/tmp$ cd tutorial
+ubuntu@ubuntu:/tmp/tutorial$ mkdir 4_creating_files_using_redirections
+ubuntu@ubuntu:/tmp/tutorial$ ls
+4_creating_files_using_redirections  dir1  dir2  output.txt
+ubuntu@ubuntu:/tmp/tutorial$ cd 4~
+bash: cd: 4~: No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial$ cd 4_cre~
+bash: cd: 4_cre~: No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial$ cd 4_creating_files_using_redirections
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ mkdir dir1 dir2
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls
+dir1  dir2
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls > output.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls
+dir1  dir2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat output.txt
+dir1
+dir2
+output.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ echo "This is a test"
+This is a test
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ echo "This is a test" > test_1.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls
+dir1  dir2  output.txt  test_1.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_1.txt
+This is a test
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ echo "This is a second test" > test_2.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ echo "This is a third test" > test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls
+dir1  dir2  output.txt  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ 
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ 
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ 
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ 
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ 
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* > concat.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls
+concat.txt  dir1  dir2  output.txt  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat conc*
+This is a test
+This is a second test
+This is a third test
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* > concat.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat conc*
+This is a test
+This is a second test
+This is a third test
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls
+concat.txt  dir1  dir2  output.txt  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls
+concat.txt  dir1  dir2  output.txt  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat con*
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ echo "Grande fichero" >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls
+concat.txt  dir1  dir2  output.txt  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat con*
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat test_* >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ echo "Grande fichero" >> con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ cat con*
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ less con*
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ echo "Lower case" > a.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ echo "Upper case" > A.TXT
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ echo "Mixed case" > A.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ ls
+a.txt  A.txt  A.TXT  concat.txt  dir1  dir2  output.txt  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/4_creating_files_using_redirections$ 
+

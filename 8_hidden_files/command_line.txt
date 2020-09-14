@@ -1,0 +1,113 @@
+ubuntu@ubuntu:/tmp/tutorial$ ls
+4_creating_files_using_redirections  6_a_bit_of_plumbing                   8_hidden_files
+5_moving_and_manipulating_files      7_the_command_line_and_the_superuser
+ubuntu@ubuntu:/tmp/tutorial$ cd 8*
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ ls
+command_line.txt
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ ls
+command_line.txt  concat.txt
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ mv concat.txt .concat.txt
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ ls
+command_line.txt
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ cat .concat.txt
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ mkdir .hidden
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ ls
+command_line.txt
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ mv .concat.txt .hidden
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ ls
+command_line.txt
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ cd hidden
+bash: cd: hidden: No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ cd .hidden
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files/.hidden$ ls
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files/.hidden$ less .concat.txt
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files/.hidden$ ls
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files/.hidden$ ls -a
+.  ..  .concat.txt
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files/.hidden$ ls .hidden
+ls: no se puede acceder a '.hidden': No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files/.hidden$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ ls .hidden
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ ls -a .hidden
+.  ..  .concat.txt
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ ls -a
+.  ..  command_line.txt  .hidden
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ tree
+. [error opening dir]
+
+0 directories, 0 files
+ubuntu@ubuntu:/tmp/tutorial/8_hidden_files$ cd /
+ubuntu@ubuntu:/$ ls -a
+.   bin   cdrom  etc   lib    lib64   media  opt   rofs  run   snap  sys  usr
+..  boot  dev    home  lib32  libx32  mnt    proc  root  sbin  srv   tmp  var
+ubuntu@ubuntu:/$ ls -a | wc -l
+26
+ubuntu@ubuntu:/$ ls | wc -l
+24
+ubuntu@ubuntu:/$ cd
+ubuntu@ubuntu:~$ cd /
+ubuntu@ubuntu:/$ 
+
+

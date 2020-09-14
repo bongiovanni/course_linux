@@ -1,0 +1,202 @@
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ cat /etc/shadow
+cat: /etc/shadow: Permiso denegado
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ sudo cat /etc/shadow
+root:*:18519:0:99999:7:::
+daemon:*:18474:0:99999:7:::
+bin:*:18474:0:99999:7:::
+sys:*:18474:0:99999:7:::
+sync:*:18474:0:99999:7:::
+games:*:18474:0:99999:7:::
+man:*:18474:0:99999:7:::
+lp:*:18474:0:99999:7:::
+mail:*:18474:0:99999:7:::
+news:*:18474:0:99999:7:::
+uucp:*:18474:0:99999:7:::
+proxy:*:18474:0:99999:7:::
+www-data:*:18474:0:99999:7:::
+backup:*:18474:0:99999:7:::
+list:*:18474:0:99999:7:::
+irc:*:18474:0:99999:7:::
+gnats:*:18474:0:99999:7:::
+nobody:*:18474:0:99999:7:::
+systemd-network:*:18474:0:99999:7:::
+systemd-resolve:*:18474:0:99999:7:::
+systemd-timesync:*:18474:0:99999:7:::
+messagebus:*:18474:0:99999:7:::
+syslog:*:18474:0:99999:7:::
+_apt:*:18474:0:99999:7:::
+tss:*:18474:0:99999:7:::
+uuidd:*:18474:0:99999:7:::
+tcpdump:*:18474:0:99999:7:::
+avahi-autoipd:*:18474:0:99999:7:::
+usbmux:*:18474:0:99999:7:::
+rtkit:*:18474:0:99999:7:::
+dnsmasq:*:18474:0:99999:7:::
+cups-pk-helper:*:18474:0:99999:7:::
+speech-dispatcher:!:18474:0:99999:7:::
+avahi:*:18474:0:99999:7:::
+kernoops:*:18474:0:99999:7:::
+saned:*:18474:0:99999:7:::
+nm-openvpn:*:18474:0:99999:7:::
+hplip:*:18474:0:99999:7:::
+whoopsie:*:18474:0:99999:7:::
+colord:*:18474:0:99999:7:::
+geoclue:*:18474:0:99999:7:::
+pulse:*:18474:0:99999:7:::
+gnome-initial-setup:*:18474:0:99999:7:::
+gdm:*:18474:0:99999:7:::
+ubuntu::18519:0:99999:7:::
+systemd-coredump:!!:18510::::::
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ sudo apt install tree
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias       
+Leyendo la información de estado... Hecho
+
+No hay un paquete apt "tree", pero hay un snap con ese nombre.
+Intente «snap install tree»
+
+E: No se ha podido localizar el paquete tree
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ snap install tree
+Se ha instalado tree 1.8.0+pkg-3fd6 por 林博仁(Buo-ren, Lin) (brlin)
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ tree
+locales-launch: Data of es_ES locale not found, generating, please wait...
+. [error opening dir]
+
+0 directories, 0 files
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ tree
+. [error opening dir]
+
+0 directories, 0 files
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ cd..
+cd..: orden no encontrada
+ubuntu@ubuntu:/tmp/tutorial/6_a_bit_of_plumbing$ cd ..
+ubuntu@ubuntu:/tmp/tutorial$ tree
+. [error opening dir]
+
+0 directories, 0 files
+ubuntu@ubuntu:/tmp/tutorial$ cd ..
+ubuntu@ubuntu:/tmp$ tree
+.
+
+0 directories, 0 files
+ubuntu@ubuntu:/tmp$ sudo tree
+locales-launch: Data of es_ES locale not found, generating, please wait...
+.
+
+0 directories, 0 files
+ubuntu@ubuntu:/tmp$ cd tutorial
+ubuntu@ubuntu:/tmp/tutorial$ sudo tree
+. [error opening dir]
+
+0 directories, 0 files
+ubuntu@ubuntu:/tmp/tutorial$ man tree
+Ninguna entrada del manual para tree
+ubuntu@ubuntu:/tmp/tutorial$ sudo apt install tree
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias       
+Leyendo la información de estado... Hecho
+
+No hay un paquete apt "tree", pero hay un snap con ese nombre.
+Intente «snap install tree»
+
+E: No se ha podido localizar el paquete tree
+ubuntu@ubuntu:/tmp/tutorial$ tree
+. [error opening dir]
+
+0 directories, 0 files
+ubuntu@ubuntu:/tmp/tutorial$ ^C
+ubuntu@ubuntu:/tmp/tutorial$ sudo snap remove tree
+tree eliminado
+ubuntu@ubuntu:/tmp/tutorial$ rm -rf $HOME/tree
+ubuntu@ubuntu:/tmp/tutorial$ sudo apt-get install tree
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias       
+Leyendo la información de estado... Hecho
+
+No hay un paquete apt "tree", pero hay un snap con ese nombre.
+Intente «snap install tree»
+
+E: No se ha podido localizar el paquete tree
+ubuntu@ubuntu:/tmp/tutorial$ cd /
+ubuntu@ubuntu:/$ ls
+bin   cdrom  etc   lib    lib64   media  opt   rofs  run   snap  sys  usr
+boot  dev    home  lib32  libx32  mnt    proc  root  sbin  srv   tmp  var
+ubuntu@ubuntu:/$ de home
+de: orden no encontrada
+ubuntu@ubuntu:/$ cd home
+ubuntu@ubuntu:/home$ ls
+ubuntu
+ubuntu@ubuntu:/home$ sudo apt install tree
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias       
+Leyendo la información de estado... Hecho
+
+No hay un paquete apt "tree", pero hay un snap con ese nombre.
+Intente «snap install tree»
+
+E: No se ha podido localizar el paquete tree
+ubuntu@ubuntu:/home$ sudo snap install tree
+Se ha instalado tree 1.8.0+pkg-3fd6 por 林博仁(Buo-ren, Lin) (brlin)
+ubuntu@ubuntu:/home$ exec -l $SHELL # <= restart shell
+ubuntu@ubuntu:/home$ tree
+locales-launch: Data of es_ES locale not found, generating, please wait...
+.
+└── ubuntu
+    ├── Desktop
+    │   ├── j.log
+    │   └── ubiquity.desktop
+    ├── Documents
+    ├── Downloads
+    ├── Music
+    ├── Pictures
+    ├── Public
+    ├── snap
+    │   ├── snap-store [error opening dir]
+    │   └── tree
+    │       ├── 18
+    │       ├── common
+    │       └── current -> 18
+    ├── Templates
+    └── Videos
+
+15 directories, 2 files
+ubuntu@ubuntu:/home$ ls
+ubuntu
+ubuntu@ubuntu:/home$ de..
+de..: orden no encontrada
+ubuntu@ubuntu:/home$ cd ..
+ubuntu@ubuntu:/$ ls
+bin   cdrom  etc   lib    lib64   media  opt   rofs  run   snap  sys  usr
+boot  dev    home  lib32  libx32  mnt    proc  root  sbin  srv   tmp  var
+ubuntu@ubuntu:/$ cd temp
+bash: cd: temp: No existe el archivo o el directorio
+ubuntu@ubuntu:/$ cd tmp
+ubuntu@ubuntu:/tmp$ ls
+config-err-kpDptw
+snap.tree
+ssh-kZqGcXF6ofMe
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-colord.service-3iaSni
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-ModemManager.service-pOXqoi
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-switcheroo-control.service-S4Hdig
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-systemd-logind.service-H0nHCi
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-systemd-resolved.service-rbAUUg
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-systemd-timesyncd.service-K7GDxg
+systemd-private-53ec59dc589c44e3b0cc7ce2c688968f-upower.service-vHuHrf
+Temp-049e830e-8573-43d0-a025-8af7b58b1d3b
+Temp-afee7109-3e96-488a-b926-dd606a33490e
+tracker-extract-files.999
+tutorial
+ubuntu@ubuntu:/tmp$ ce tut*
+ce: orden no encontrada
+ubuntu@ubuntu:/tmp$ cd tut*
+ubuntu@ubuntu:/tmp/tutorial$ tree
+. [error opening dir]
+
+0 directories, 0 files
+ubuntu@ubuntu:/tmp/tutorial$ su tree
+su: el usuario tree no existe
+ubuntu@ubuntu:/tmp/tutorial$ sudo tree
+. [error opening dir]
+
+0 directories, 0 files
+

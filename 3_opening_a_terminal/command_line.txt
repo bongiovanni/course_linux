@@ -1,0 +1,199 @@
+ubuntu@ubuntu:/$ pwd
+/
+ubuntu@ubuntu:/$ cd /
+ubuntu@ubuntu:/$ pwd
+/
+ubuntu@ubuntu:/$ cd home
+ubuntu@ubuntu:/home$ pwd
+/home
+ubuntu@ubuntu:/home$ cd ..
+ubuntu@ubuntu:/$ pwd
+/
+ubuntu@ubuntu:/$ cd home
+ubuntu@ubuntu:/home$ cd
+ubuntu@ubuntu:~$ cd /
+ubuntu@ubuntu:/$ cd ../..
+ubuntu@ubuntu:/$ paw
+
+Orden «paw» no encontrada. Quizá quiso decir:
+
+  la orden «ptw» del paquete snap «ptw (1.0.0)»
+  la orden «pax» del paquete deb «pax (1:20190825-1)»
+  la orden «raw» del paquete deb «util-linux (2.34-0.1ubuntu9)»
+
+Consulte «snap info <nombre del snap>» para ver más versiones.
+
+ubuntu@ubuntu:/$ pwd
+/
+ubuntu@ubuntu:/$ cd ../../etc
+ubuntu@ubuntu:/etc$ ls
+acpi                           fprintd.conf     logrotate.d              resolv.conf
+adduser.conf                   fstab            lsb-release              rmt
+alsa                           fuse.conf        ltrace.conf              rpc
+alternatives                   fwupd            lvm                      rsyslog.conf
+anacrontab                     gai.conf         machine-id               rsyslog.d
+apg.conf                       gamemode.ini     magic                    rygel.conf
+apm                            gdb              magic.mime               sane.d
+apparmor                       gdm3             mailcap                  security
+apparmor.d                     geoclue          mailcap.order            selinux
+apport                         ghostscript      manpath.config           sensors3.conf
+appstream.conf                 glvnd            mime.types               sensors.d
+apt                            gnome            mke2fs.conf              services
+avahi                          groff            modprobe.d               sgml
+bash.bashrc                    group            modules                  shadow
+bash_completion                group-           modules-load.d           shadow-
+bash_completion.d              grub.d           mtab                     shells
+bindresvport.blacklist         gshadow          mtools.conf              skel
+binfmt.d                       gshadow-         mysql                    snmp
+bluetooth                      gss              nanorc                   speech-dispatcher
+brlapi.key                     gtk-2.0          netplan                  ssh
+brltty                         gtk-3.0          network                  ssl
+brltty.conf                    hdparm.conf      networkd-dispatcher      subgid
+ca-certificates                host.conf        NetworkManager           subuid
+ca-certificates.conf           hostid           networks                 sudoers
+ca-certificates.conf.dpkg-old  hostname         newt                     sudoers.d
+calendar                       hosts            nsswitch.conf            sysctl.conf
+casper.conf                    hosts.allow      openvpn                  sysctl.d
+chatscripts                    hosts.deny       opt                      systemd
+cifs-utils                     hp               os-release               terminfo
+console-setup                  ifplugd          PackageKit               thermald
+cracklib                       init             pam.conf                 thunderbird
+cron.d                         init.d           pam.d                    timezone
+cron.daily                     initramfs-tools  papersize                tmpfiles.d
+cron.hourly                    inputrc          passwd                   ubuntu-advantage
+cron.monthly                   insserv.conf.d   passwd-                  ucf.conf
+crontab                        iproute2         pcmcia                   udev
+cron.weekly                    issue            perl                     udisks2
+cryptsetup-initramfs           issue.net        pki                      ufw
+crypttab                       kernel           pm                       update-manager
+cups                           kernel-img.conf  pnm2ppa.conf             update-motd.d
+cupshelpers                    kerneloops.conf  polkit-1                 update-notifier
+dbus-1                         ldap             popularity-contest.conf  UPower
+dconf                          ld.so.cache      ppp                      usb_modeswitch.conf
+debconf.conf                   ld.so.conf       profile                  usb_modeswitch.d
+debian_version                 ld.so.conf.d     profile.d                vconsole.conf
+default                        legal            protocols                vim
+deluser.conf                   libao.conf       pulse                    vtrgb
+depmod.d                       libaudit.conf    python3                  vulkan
+dhcp                           libblockdev      python3.8                wgetrc
+dictionaries-common            libnl-3          rc0.d                    wpa_supplicant
+dpkg                           libpaper.d       rc1.d                    X11
+e2scrub.conf                   libreoffice      rc2.d                    xattr.conf
+emacs                          locale.alias     rc3.d                    xdg
+environment                    locale.gen       rc4.d                    xml
+environment.d                  localtime        rc5.d                    zfs
+ethertypes                     logcheck         rc6.d                    zsh_command_not_found
+firefox                        login.defs       rcS.d
+fonts                          logrotate.conf   request-key.d
+ubuntu@ubuntu:/etc$ cd/
+bash: cd/: No existe el archivo o el directorio
+ubuntu@ubuntu:/etc$ cd /
+ubuntu@ubuntu:/$ cd /etc
+ubuntu@ubuntu:/etc$ cd /
+ubuntu@ubuntu:/$ pwd
+/
+ubuntu@ubuntu:/$ cd etc
+ubuntu@ubuntu:/etc$ pwd
+/etc
+ubuntu@ubuntu:/etc$ cd
+ubuntu@ubuntu:~$ cd
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ cd etc
+bash: cd: etc: No existe el archivo o el directorio
+ubuntu@ubuntu:~$ pwd
+/home/ubuntu
+ubuntu@ubuntu:~$ cd
+ubuntu@ubuntu:~$ cd /etc
+ubuntu@ubuntu:/etc$ ls
+acpi                           fprintd.conf     logrotate.d              resolv.conf
+adduser.conf                   fstab            lsb-release              rmt
+alsa                           fuse.conf        ltrace.conf              rpc
+alternatives                   fwupd            lvm                      rsyslog.conf
+anacrontab                     gai.conf         machine-id               rsyslog.d
+apg.conf                       gamemode.ini     magic                    rygel.conf
+apm                            gdb              magic.mime               sane.d
+apparmor                       gdm3             mailcap                  security
+apparmor.d                     geoclue          mailcap.order            selinux
+apport                         ghostscript      manpath.config           sensors3.conf
+appstream.conf                 glvnd            mime.types               sensors.d
+apt                            gnome            mke2fs.conf              services
+avahi                          groff            modprobe.d               sgml
+bash.bashrc                    group            modules                  shadow
+bash_completion                group-           modules-load.d           shadow-
+bash_completion.d              grub.d           mtab                     shells
+bindresvport.blacklist         gshadow          mtools.conf              skel
+binfmt.d                       gshadow-         mysql                    snmp
+bluetooth                      gss              nanorc                   speech-dispatcher
+brlapi.key                     gtk-2.0          netplan                  ssh
+brltty                         gtk-3.0          network                  ssl
+brltty.conf                    hdparm.conf      networkd-dispatcher      subgid
+ca-certificates                host.conf        NetworkManager           subuid
+ca-certificates.conf           hostid           networks                 sudoers
+ca-certificates.conf.dpkg-old  hostname         newt                     sudoers.d
+calendar                       hosts            nsswitch.conf            sysctl.conf
+casper.conf                    hosts.allow      openvpn                  sysctl.d
+chatscripts                    hosts.deny       opt                      systemd
+cifs-utils                     hp               os-release               terminfo
+console-setup                  ifplugd          PackageKit               thermald
+cracklib                       init             pam.conf                 thunderbird
+cron.d                         init.d           pam.d                    timezone
+cron.daily                     initramfs-tools  papersize                tmpfiles.d
+cron.hourly                    inputrc          passwd                   ubuntu-advantage
+cron.monthly                   insserv.conf.d   passwd-                  ucf.conf
+crontab                        iproute2         pcmcia                   udev
+cron.weekly                    issue            perl                     udisks2
+cryptsetup-initramfs           issue.net        pki                      ufw
+crypttab                       kernel           pm                       update-manager
+cups                           kernel-img.conf  pnm2ppa.conf             update-motd.d
+cupshelpers                    kerneloops.conf  polkit-1                 update-notifier
+dbus-1                         ldap             popularity-contest.conf  UPower
+dconf                          ld.so.cache      ppp                      usb_modeswitch.conf
+debconf.conf                   ld.so.conf       profile                  usb_modeswitch.d
+debian_version                 ld.so.conf.d     profile.d                vconsole.conf
+default                        legal            protocols                vim
+deluser.conf                   libao.conf       pulse                    vtrgb
+depmod.d                       libaudit.conf    python3                  vulkan
+dhcp                           libblockdev      python3.8                wgetrc
+dictionaries-common            libnl-3          rc0.d                    wpa_supplicant
+dpkg                           libpaper.d       rc1.d                    X11
+e2scrub.conf                   libreoffice      rc2.d                    xattr.conf
+emacs                          locale.alias     rc3.d                    xdg
+environment                    locale.gen       rc4.d                    xml
+environment.d                  localtime        rc5.d                    zfs
+ethertypes                     logcheck         rc6.d                    zsh_command_not_found
+firefox                        login.defs       rcS.d
+fonts                          logrotate.conf   request-key.d
+ubuntu@ubuntu:/etc$ cd
+ubuntu@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+ubuntu@ubuntu:~$ cd /
+ubuntu@ubuntu:/$ ls
+çbin   cdrom  etc   lib    lib64   media  opt   rofs  run   snap  sys  usr
+boot  dev    home  lib32  libx32  mnt    proc  root  sbin  srv   tmp  var
+ubuntu@ubuntu:/$ whoami
+ubuntu
+ubuntu@ubuntu:/$ cd /home/ubuntu/Desktop
+ubuntu@ubuntu:~/Desktop$ ls
+j.log  ubiquity.desktop
+ubuntu@ubuntu:~/Desktop$ cd..
+cd..: orden no encontrada
+ubuntu@ubuntu:~/Desktop$ cd /
+ubuntu@ubuntu:/$ ls
+bin   cdrom  etc   lib    lib64   media  opt   rofs  run   snap  sys  usr
+boot  dev    home  lib32  libx32  mnt    proc  root  sbin  srv   tmp  var
+ubuntu@ubuntu:/$ cd home
+ubuntu@ubuntu:/home$ ls
+ubuntu
+ubuntu@ubuntu:/home$ cd ubuntu
+ubuntu@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+ubuntu@ubuntu:~$ cd
+ubuntu@ubuntu:~$ cd /
+ubuntu@ubuntu:/$ cd ~/Desktop
+ubuntu@ubuntu:~/Desktop$ cd /etc
+ubuntu@ubuntu:/etc$ cd /var/log
+ubuntu@ubuntu:/var/log$ cd ..
+ubuntu@ubuntu:/var$ cd
+ubuntu@ubuntu:~$ 
+

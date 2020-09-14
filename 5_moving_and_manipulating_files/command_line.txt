@@ -1,0 +1,253 @@
+ubuntu@ubuntu:/tmp/tutorial$ ls
+4_creating_files_using_redirections  5_moving_and_manipulating_files  dir1  dir2
+ubuntu@ubuntu:/tmp/tutorial$ cd 5_moving*
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  concat.txt  dir1  dir2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ mv concat.txt dir1
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  dir1  dir2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls dir1
+concat.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ mv dir1/* .
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  concat.txt  dir1  dir2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  concat.txt  dir1  dir2  output.txt  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ mkdir dir3
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  concat.txt  dir1  dir2  dir3  output.txt  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ mv concat.txt test_* dir3 dir2
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  dir1  dir2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls dir2
+concat.txt  dir3  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ 
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ 
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ 
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ cd dir3
+bash: cd: dir3: No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ cd dir2
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ ls
+concat.txt  dir3  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ cd dir3
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ ls
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ mkd -p dir4/dir5/dir6
+
+Orden «mkd» no encontrada. Quizá quiso decir:
+
+  la orden «mrd» del paquete deb «mtools (4.0.24-1)»
+  la orden «mcd» del paquete deb «mtools (4.0.24-1)»
+  la orden «mmd» del paquete deb «mtools (4.0.24-1)»
+
+Pruebe con: sudo apt install <nombre del paquete deb>
+
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ mkdir -p dir4/dir5/dir6
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ ls
+dir4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ cd.. dir4
+cd..: orden no encontrada
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ cd dir4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3/dir4$ ls
+dir5
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3/dir4$ cd dir5
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3/dir4/dir5$ ls
+dir6
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3/dir4/dir5$ cd /dir2
+bash: cd: /dir2: No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3/dir4/dir5$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3/dir4$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ ls
+concat.txt  dir3  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ mv dir2/concat.txt dir4/dir5/dir6
+mv: no se puede efectuar `stat' sobre 'dir2/concat.txt': No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ mv dir2/concat.txt dir4/dir5/dir6
+mv: no se puede mover 'dir2/concat.txt' a 'dir4/dir5/dir6': No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  dir1  dir2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ pwd
+/tmp/tutorial/5_moving_and_manipulating_files
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ cd dir2
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ ls
+concat.txt  dir3  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ mv concat.txt dir3/dir4/dir5/dir6
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ ls
+dir3  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ ls dir6
+ls: no se puede acceder a 'dir6': No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ cd dir3
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ ls
+dir4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ cd dir4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3/dir4$ cd dir5/dir6
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3/dir4/dir5/dir6$ ls
+concat.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3/dir4/dir5/dir6$ cd .. .. .. 
+bash: cd: demasiados argumentos
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3/dir4/dir5/dir6$ cd ../../../
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ cd dir2
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ ls
+dir3  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$ cd dir3
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ cp dir4/dir5/dir6/con*
+cp: falta el operando archivo de destino después de 'dir4/dir5/dir6/concat.txt'
+Pruebe 'cp --help' para más información.
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ cp dir4/dir5/dir6/con* .
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ ls
+concat.txt  dir4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ cp concat.txt backup_combined.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ ls
+backup_combined.txt  concat.txt  dir4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ mv backup_combined.txt combined_cackup.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ ls
+combined_cackup.txt  concat.txt  dir4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ mv combined_cackup.txt combined backup.txt
+mv: el objetivo 'backup.txt' no es un directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ mv combined_cackup.txt combined_backup.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ ls
+combined_backup.txt  concat.txt  dir4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ mv combined_backup.txt concat_backup.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ ls
+concat_backup.txt  concat.txt  dir4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2/dir3$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/dir2$  cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ mv di2 folder_2
+mv: no se puede efectuar `stat' sobre 'di2': No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ mv dir2 folder_2
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  dir1  folder_2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ mv dir1 folder_1
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  folder_1  folder_2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ mv dir3 folder_3
+mv: no se puede efectuar `stat' sobre 'dir3': No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  folder_1  folder_2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ cd folder_2
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2$ ls
+dir3  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2$ mv dir3 folder_3
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2$ cd fol*
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ mv dir4 folder_4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ cd fol*
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4$ mv dir5 folder_5
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4$ cd fol*
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5$ mv dir6 folder_6
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5$ ls
+folder_6
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5$ cd fol*
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5/folder_6$ ls
+concat.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5/folder_6$ cd /
+ubuntu@ubuntu:/$ cd tmp/tutorial/5*
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  folder_1  folder_2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ pwd
+/tmp/tutorial/5_moving_and_manipulating_files
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ cd ls
+bash: cd: ls: No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ ls
+command_line.txt  folder_1  folder_2  output.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ cd folder*
+bash: cd: demasiados argumentos
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ cd folder_3
+bash: cd: folder_3: No existe el archivo o el directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files$ cd folder_2
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2$ ls
+folder_3  test_1.txt  test_2.txt  test_3.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2$ cd folder_3
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ ls
+concat_backup.txt  concat.txt  folder_4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ rm folder_4/folder_5/folder_6/concat.txt concat_backup.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ ls
+concat.txt  folder_4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ cd folder_4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4$ ls
+folder_5
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4$ cd folder_5
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5$ cd folder_6
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5/folder_6$ ls
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5/folder_6$ cd..
+cd..: orden no encontrada
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5/folder_6$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5$ rm folder_6
+rm: no se puede borrar 'folder_6': Es un directorio
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5$ rmdir folder_6
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5$ ls
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4/folder_5$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4$ echo "hola" > echo.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4$ ls
+echo.txt  folder_5
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3/folder_4$ cd ..
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ rm -r folder_4
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ ls
+concat.txt
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ cat conc*
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+This is a test
+This is a second test
+This is a third test
+Grande fichero
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ ^C
+ubuntu@ubuntu:/tmp/tutorial/5_moving_and_manipulating_files/folder_2/folder_3$ 
+
